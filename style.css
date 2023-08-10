@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+    color: white;
+}
+.hide {
+    display: none;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    font-size: larger;
+}
