@@ -1,9 +1,8 @@
 const containerDiv = document.getElementById('container')
 const answerDiv = document.getElementById('answerDiv')
 
-
 const testSize = 1000
-const answers = [25, 50, 0, 25]
+
 
 const getPercentage = (part, whole) => (part / whole) * 100
 
@@ -49,8 +48,7 @@ const getAnswerPercent = () => {
         textAnswerC: `50% = ${getPercentage(answer2.length, testSize)}%`,
         textAnswerD: `25% = ${getPercentage(answer3.length, testSize)}%`
     }
-    return answerObj
-    
+    return answerObj    
 }
 
 console.log(getAnswerPercent())
@@ -69,22 +67,20 @@ const renderStats = () => {
     answerDiv.appendChild(statsDiv)
 }
 
-renderStats()
+
 
 const answerBtn = document.getElementById('answerBtn')
+
 const showResult = () => {
 
-   const textElements = document.querySelectorAll('p')
-   
-   
+   const textElements = document.querySelectorAll('p')   
    for (text of textElements) {
     text.classList.toggle('hide')
    } 
    answerDiv.classList.toggle('hide')
-   
-
 }
 
+renderStats()
 showResult()
 
 answerBtn.addEventListener('click', () => {
